@@ -1,13 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Temperature Converter</title>
 </head>
+
 <body>
     <section>
-        
+        <input type="text" placeholder="Length Converter">
+
+        <div class="converter">
+            <!-- left from-->
+            <div class="select-container">
+                <input type="text" placeholder="1">
+                <select name="From" id="">
+                    <option value="Meter">Meter</option>
+                    <option value="Centimeter">Centimeter</option>
+                    <option value="Kilometer">Kilometer</option>
+                    <option value="Millimeter">Millimeter</option>
+                </select>
+            </div>
+
+            <!-- middle -->
+            <div>
+                <h1 class="equal">=</h1>
+            </div>
+
+            <!-- right to -->
+            <div class="select-container">
+                <input type="text" placeholder="1">
+                <select name="From" id="">
+                    <option value="Centimeter">Centimeter</option>
+                    <option value="Meter">Meter</option>
+                    <option value="Kilometer">Kilometer</option>
+                    <option value="Millimeter">Millimeter</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- result -->
+        <div class="result">
+            <input type="text" placeholder="result">
+        </div>
+
     </section>
+    <script src="js/script.js"></script>
 </body>
+
 </html>

@@ -8,4 +8,61 @@
 
 body {
     overflow-x: hidden;
+    background-color: #cce7f0;
+}
+
+section {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.converter {
+    display: flex;
+    gap: 20px;
+    margin-left: 700px;
+}
+
+input {
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.equal {
+    font-size: 50px;
+    margin-top: 30px;
+}
+
+
+.select-container {
+    margin-top: 20px;
+}
+
+.select-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.select-container select {
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+}
+
+.result{
+    margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .converter {
+        display: flex;
+        gap: 20px;
+        margin-left: 100px;
+    }
 }
