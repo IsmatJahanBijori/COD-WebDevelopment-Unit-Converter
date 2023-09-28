@@ -11,13 +11,11 @@
 <body>
     <section>
         <label for="">Length Converter</label>
-        <!-- oninput="convertLength()" -->
-        <!-- onchange="convertLength()" -->
         <div class="converter">
             <!-- left from-->
             <div class="select-container">
-                <input type="number" placeholder="1" id="leftValue">
-                <select name="From" id="leftUnit">
+                <input type="number" placeholder="1" id="leftValue" oninput="convertLength()">
+                <select name="From" id="leftUnit" onchange="convertLength()">
                     <option value="Meter">Meter</option>
                     <option value="Centimeter">Centimeter</option>
                     <option value="Kilometre">Kilometre</option>

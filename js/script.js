@@ -9,7 +9,7 @@ function convertLength() {
         Meter: 1,
         Centimeter: 0.01,
         Kilometre: 1000,
-        Millimetre: 0.001
+        Millimetre: 0.001,
     };
 
     // conversion
@@ -19,9 +19,5 @@ function convertLength() {
     document.getElementById('rightValue').value = result.toFixed(2); 
 }
 
-//  conversion function to the input change event
-document.getElementById('leftValue').addEventListener('input', convertLength);
-document.getElementById('leftUnit').addEventListener('change', convertLength);
-document.getElementById('rightUnit').addEventListener('change', convertLength);
 
 convertLength();
