@@ -10,17 +10,18 @@
 
 <body>
     <section>
-        <input type="text" placeholder="Length Converter">
-
+        <label for="">Length Converter</label>
+        <!-- oninput="convertLength()" -->
+        <!-- onchange="convertLength()" -->
         <div class="converter">
             <!-- left from-->
             <div class="select-container">
-                <input type="text" placeholder="1">
-                <select name="From" id="">
+                <input type="number" placeholder="1" id="leftValue">
+                <select name="From" id="leftUnit">
                     <option value="Meter">Meter</option>
                     <option value="Centimeter">Centimeter</option>
-                    <option value="Kilometer">Kilometer</option>
-                    <option value="Millimeter">Millimeter</option>
+                    <option value="Kilometre">Kilometre</option>
+                    <option value="Millimetre">Millimetre</option>
                 </select>
             </div>
 
@@ -31,21 +32,15 @@
 
             <!-- right to -->
             <div class="select-container">
-                <input type="text" placeholder="1">
-                <select name="From" id="">
+                <input type="number" placeholder="100" id="rightValue">
+                <select name="To" id="rightUnit" onchange="convertLength()">
                     <option value="Centimeter">Centimeter</option>
                     <option value="Meter">Meter</option>
-                    <option value="Kilometer">Kilometer</option>
-                    <option value="Millimeter">Millimeter</option>
+                    <option value="Kilometre">Kilometre</option>
+                    <option value="Millimetre">Millimetre</option>
                 </select>
             </div>
         </div>
-
-        <!-- result -->
-        <div class="result">
-            <input type="text" placeholder="result">
-        </div>
-
     </section>
     <script src="js/script.js"></script>
 </body>

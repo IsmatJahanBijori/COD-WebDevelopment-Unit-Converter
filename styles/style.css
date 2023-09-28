@@ -38,20 +38,19 @@ input {
 
 .select-container {
     margin-top: 20px;
-}
-
-.select-container {
     display: flex;
     flex-direction: column;
 }
 
-.select-container select {
+
+.select-container select,  .select-container input{
     text-align: center;
     padding: 5px;
     border-radius: 5px;
     margin-top: 5px;
     border: none;
     outline: none;
+    margin: 5px;
 }
 
 .result{
